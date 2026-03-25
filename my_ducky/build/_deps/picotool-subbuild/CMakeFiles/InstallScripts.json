@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/benjarch/pico/my_ducky/build/_deps/picotool-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
