@@ -1,2 +1,0 @@
-/home/benjarch/pico/my_ducky/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/edit_cache.dir
-/home/benjarch/pico/my_ducky/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/rebuild_cache.dir

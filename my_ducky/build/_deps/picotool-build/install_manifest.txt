@@ -1,7 +1,0 @@
-/home/benjarch/pico/my_ducky/build/_deps/picotool/picotool
-/home/benjarch/pico/my_ducky/build/_deps/picotool/picotoolTargets.cmake
-/home/benjarch/pico/my_ducky/build/_deps/picotool/picotoolTargets-release.cmake
-/home/benjarch/pico/my_ducky/build/_deps/picotool/picotoolConfig.cmake
-/home/benjarch/pico/my_ducky/build/_deps/picotool/picotoolConfigVersion.cmake
-/home/benjarch/pico/my_ducky/build/_deps/picotool/enc_bootloader.elf
-/home/benjarch/pico/my_ducky/build/_deps/picotool/enc_bootloader_mbedtls.elf
