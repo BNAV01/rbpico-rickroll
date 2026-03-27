@@ -159,7 +159,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/my_ducky.dir/main.c.o
  .bss           0x00000000        0x0 CMakeFiles/my_ducky.dir/main.c.o
  .text.send_key
-                0x00000000       0xcc CMakeFiles/my_ducky.dir/main.c.o
+                0x00000000       0xc4 CMakeFiles/my_ducky.dir/main.c.o
  .rodata.LED_PIN
                 0x00000000        0x4 CMakeFiles/my_ducky.dir/main.c.o
  .text          0x00000000        0x0 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
@@ -3298,7 +3298,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x3ab8
+.text           0x10000100     0x3aa8
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -3362,427 +3362,428 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text.frame_dummy
                 0x10000288       0x20 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
- .text.send_key.constprop.0
-                0x100002a8       0xcc CMakeFiles/my_ducky.dir/main.c.o
  .text.send_key.constprop.1
-                0x10000374       0xd0 CMakeFiles/my_ducky.dir/main.c.o
+                0x100002a8       0xc8 CMakeFiles/my_ducky.dir/main.c.o
+ .text.send_key.constprop.0
+                0x10000370       0xc4 CMakeFiles/my_ducky.dir/main.c.o
  .text.startup.main
-                0x10000444      0x3f4 CMakeFiles/my_ducky.dir/main.c.o
-                0x10000444                main
+                0x10000434      0x3f0 CMakeFiles/my_ducky.dir/main.c.o
+                0x10000434                main
  .text.tud_hid_get_report_cb
-                0x10000838        0x4 CMakeFiles/my_ducky.dir/main.c.o
-                0x10000838                tud_hid_get_report_cb
+                0x10000824        0x4 CMakeFiles/my_ducky.dir/main.c.o
+                0x10000824                tud_hid_get_report_cb
  .text.tud_hid_set_report_cb
-                0x1000083c        0x4 CMakeFiles/my_ducky.dir/main.c.o
-                0x1000083c                tud_hid_set_report_cb
+                0x10000828        0x4 CMakeFiles/my_ducky.dir/main.c.o
+                0x10000828                tud_hid_set_report_cb
  .text.tud_descriptor_device_cb
-                0x10000840        0x8 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
-                0x10000840                tud_descriptor_device_cb
+                0x1000082c        0x8 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x1000082c                tud_descriptor_device_cb
  .text.tud_hid_descriptor_report_cb
-                0x10000848        0x8 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
-                0x10000848                tud_hid_descriptor_report_cb
+                0x10000834        0x8 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x10000834                tud_hid_descriptor_report_cb
  .text.tud_descriptor_configuration_cb
-                0x10000850        0x8 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
-                0x10000850                tud_descriptor_configuration_cb
+                0x1000083c        0x8 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x1000083c                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x10000858       0x74 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
-                0x10000858                tud_descriptor_string_cb
+                0x10000844       0x74 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x10000844                tud_descriptor_string_cb
  .text.gpio_init
-                0x100008cc       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x100008cc                gpio_init
+                0x100008b8       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100008b8                gpio_init
  .text.rp2040_chip_version
-                0x1000090c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
-                0x1000090c                rp2040_chip_version
- .text.panic    0x10000918       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x10000918                panic
+                0x100008f8        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x100008f8                rp2040_chip_version
+ .text.panic    0x10000904       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10000904                panic
  .text.hw_claim_or_assert
-                0x10000948       0x44 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000948                hw_claim_or_assert
+                0x10000934       0x44 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000934                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x1000098c       0x88 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x1000098c                hw_claim_unused_from_range
+                0x10000978       0x88 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000978                hw_claim_unused_from_range
  .text.next_striped_spin_lock_num
-                0x10000a14       0x18 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10000a14                next_striped_spin_lock_num
+                0x10000a00       0x18 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10000a00                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x10000a2c       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10000a2c                spin_lock_claim_unused
+                0x10000a18       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10000a18                spin_lock_claim_unused
  .text.spin_locks_reset
-                0x10000a50       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x10000a50                spin_locks_reset
+                0x10000a3c       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x10000a3c                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x10000a6c       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000a6c                runtime_init_per_core_irq_priorities
+                0x10000a58       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000a58                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x10000a90       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000a90                irq_set_enabled
+                0x10000a7c       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000a7c                irq_set_enabled
  .text.irq_set_exclusive_handler
-                0x10000ab4       0x54 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000ab4                irq_set_exclusive_handler
+                0x10000aa0       0x54 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000aa0                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x10000b08      0x1f4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000b08                irq_add_shared_handler
+                0x10000af4      0x1f4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000af4                irq_add_shared_handler
  .text.irq_add_tail_to_free_list
-                0x10000cfc       0xb4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000cfc                irq_add_tail_to_free_list
+                0x10000ce8       0xb4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000ce8                irq_add_tail_to_free_list
  .text.lock_init
-                0x10000db0       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x10000db0                lock_init
+                0x10000d9c       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x10000d9c                lock_init
  .text.runtime_init_mutex
-                0x10000dc0       0x50 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10000dc0                runtime_init_mutex
+                0x10000dac       0x50 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10000dac                runtime_init_mutex
  .text.mutex_init
-                0x10000e10       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10000e10                mutex_init
+                0x10000dfc       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10000dfc                mutex_init
  .text.critical_section_init
-                0x10000e2c       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
-                0x10000e2c                critical_section_init
+                0x10000e18       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x10000e18                critical_section_init
  .text.sleep_until_callback
-                0x10000e48       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000e34       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x10000e78      0x300 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000e64      0x300 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x10001178       0xdc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001178                runtime_init_default_alarm_pool
+                0x10001164       0xdc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001164                runtime_init_default_alarm_pool
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10001254       0xb0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001254                alarm_pool_add_alarm_at_force_in_context
+                0x10001240       0xb0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001240                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10001304       0x74 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001304                alarm_pool_cancel_alarm
+                0x100012f0       0x74 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100012f0                alarm_pool_cancel_alarm
  .text.best_effort_wfe_or_timeout
-                0x10001378      0x10c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001378                best_effort_wfe_or_timeout
+                0x10001364      0x10c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001364                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10001484       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001484                timer_hardware_alarm_claim
+                0x10001470       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001470                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10001498       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001498                timer_time_us_64
+                0x10001484       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001484                timer_time_us_64
  .text.time_us_64
-                0x100014a8       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x100014a8                time_us_64
+                0x10001494       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001494                time_us_64
  .text.clock_configure_int_divider
-                0x100014bc       0xf4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x100014bc                clock_configure_int_divider
+                0x100014a8       0xf4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x100014a8                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x100015b0       0xe8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x100015b0                clock_configure_undivided
+                0x1000159c       0xe8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x1000159c                clock_configure_undivided
  .text.clock_get_hz
-                0x10001698        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001698                clock_get_hz
+                0x10001684        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001684                clock_get_hz
  .text.pll_init
-                0x100016a4       0xa4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x100016a4                pll_init
+                0x10001690       0xa4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x10001690                pll_init
  .text.tick_start
-                0x10001748       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x10001748                tick_start
+                0x10001734       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x10001734                tick_start
  .text.rom_func_lookup
-                0x10001758       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10001758                rom_func_lookup
+                0x10001744       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10001744                rom_func_lookup
  .text.rom_data_lookup
-                0x10001768       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10001768                rom_data_lookup
+                0x10001754       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10001754                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10001778       0x44 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10001778                rom_funcs_lookup
+                0x10001764       0x44 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10001764                rom_funcs_lookup
  .text.xosc_init
-                0x100017bc       0x28 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x100017bc                xosc_init
+                0x100017a8       0x28 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x100017a8                xosc_init
  .text.first_per_core_initializer
-                0x100017e4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100017d0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x100017e8        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100017e8                hard_assertion_failure
+                0x100017d4        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100017d4                hard_assertion_failure
  .text.runtime_run_initializers
-                0x100017f4       0x28 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100017f4                runtime_run_initializers
+                0x100017e0       0x28 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100017e0                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x1000181c       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000181c                runtime_init_early_resets
+                0x10001808       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001808                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10001848       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001848                runtime_init_usb_power_down
+                0x10001834       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001834                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x10001864       0x20 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001864                runtime_init_post_clock_resets
+                0x10001850       0x20 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001850                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x10001884       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001884                runtime_init_rp2040_gpio_ie_disable
+                0x10001870       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001870                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x10001898        0x8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001898                runtime_init_spin_locks_reset
+                0x10001884        0x8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001884                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x100018a0       0xb4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100018a0                runtime_init_install_ram_vector_table
+                0x1000188c       0xb4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000188c                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x10001954       0xd8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x10001954                runtime_init_clocks
- .text          0x10001a2c       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10001940       0xd8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10001940                runtime_init_clocks
+ .text          0x10001a18       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_uidiv
-                0x10001a3c       0x4c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10001a3c                __wrap___aeabi_uidiv
-                0x10001a3c                __wrap___aeabi_uidivmod
-                0x10001a3c                div_u32u32
-                0x10001a3c                divmod_u32u32
-                0x10001a44                divmod_u32u32_unsafe
-                0x10001a6c                divmod_u32u32_savestate
+                0x10001a28       0x4c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10001a28                __wrap___aeabi_uidiv
+                0x10001a28                __wrap___aeabi_uidivmod
+                0x10001a28                div_u32u32
+                0x10001a28                divmod_u32u32
+                0x10001a30                divmod_u32u32_unsafe
+                0x10001a58                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10001a88      0x424 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10001a88                div_s64s64
-                0x10001a88                divmod_s64s64
-                0x10001a88                __wrap___aeabi_ldivmod
-                0x10001ab8                div_u64u64
-                0x10001ab8                divmod_u64u64
-                0x10001ab8                __wrap___aeabi_uldivmod
-                0x10001ac8                divmod_u64u64_savestate
-                0x10001ae8                divmod_s64s64_unsafe
-                0x10001b70                divmod_u64u64_unsafe
+                0x10001a74      0x424 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10001a74                div_s64s64
+                0x10001a74                divmod_s64s64
+                0x10001a74                __wrap___aeabi_ldivmod
+                0x10001aa4                div_u64u64
+                0x10001aa4                divmod_u64u64
+                0x10001aa4                __wrap___aeabi_uldivmod
+                0x10001ab4                divmod_u64u64_savestate
+                0x10001ad4                divmod_s64s64_unsafe
+                0x10001b5c                divmod_u64u64_unsafe
  .text.__aeabi_double_init
-                0x10001eac       0xa4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x10001eac                __aeabi_double_init
+                0x10001e98       0xa4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x10001e98                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10001f50       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10001f50                double_table_shim_on_use_helper
+                0x10001f3c       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10001f3c                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x10001f7c       0x32 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-                0x10001f7c                __wrap___aeabi_lmul
- *fill*         0x10001fae        0x2 
+                0x10001f68       0x32 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+                0x10001f68                __wrap___aeabi_lmul
+ *fill*         0x10001f9a        0x2 
  .text.__aeabi_float_init
-                0x10001fb0       0x64 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x10001fb0                __aeabi_float_init
+                0x10001f9c       0x64 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x10001f9c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10002014       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x10002014                float_table_shim_on_use_helper
- .text          0x10002040       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10002040                __aeabi_mem_init
- .text.memset   0x10002050        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10002050                __wrap_memset
- .text.memcpy   0x1000205c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x1000205c                __wrap___aeabi_memcpy
-                0x1000205c                __wrap_memcpy
+                0x10002000       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x10002000                float_table_shim_on_use_helper
+ .text          0x1000202c       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000202c                __aeabi_mem_init
+ .text.memset   0x1000203c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000203c                __wrap_memset
+ .text.memcpy   0x10002048        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10002048                __wrap___aeabi_memcpy
+                0x10002048                __wrap_memcpy
  .text._out_char
-                0x10002068       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10002054       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.weak_raw_vprintf
-                0x10002078       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10002078                weak_raw_vprintf
- .text._exit    0x100020a8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100020a8                _exit
- .text.exit     0x100020ac        0x8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100020ac                exit
+                0x10002064       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10002064                weak_raw_vprintf
+ .text._exit    0x10002094        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10002094                _exit
+ .text.exit     0x10002098        0x8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10002098                exit
  .text.runtime_init
-                0x100020b4       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100020b4                runtime_init
+                0x100020a0       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100020a0                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x100020e0       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100020cc       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x100020f0       0xb0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100020dc       0xb0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x100021a0       0xfc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100021a0                stdio_put_string
+                0x1000218c       0xfc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x1000218c                stdio_put_string
  .text.__wrap_putchar
-                0x1000229c       0x94 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x1000229c                stdio_putchar
-                0x1000229c                __wrap_putchar
+                0x10002288       0x94 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002288                stdio_putchar
+                0x10002288                __wrap_putchar
  .text.__wrap_puts
-                0x10002330       0x3c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002330                __wrap_puts
-                0x10002330                stdio_puts
+                0x1000231c       0x3c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x1000231c                __wrap_puts
+                0x1000231c                stdio_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x1000236c       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x10002358       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .text.flash_get_unique_id
-                0x1000237c       0x3c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-                0x1000237c                flash_get_unique_id
+                0x10002368       0x3c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x10002368                flash_get_unique_id
  .text.dcd_init
-                0x100023b8       0x90 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100023b8                dcd_init
+                0x100023a4       0x90 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100023a4                dcd_init
  .text.dcd_int_enable
-                0x10002448        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10002448                dcd_int_enable
+                0x10002434        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10002434                dcd_int_enable
  .text.dcd_set_address
-                0x10002454       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10002454                dcd_set_address
+                0x10002440       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10002440                dcd_set_address
  .text.dcd_sof_enable
-                0x10002468       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10002468                dcd_sof_enable
+                0x10002454       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10002454                dcd_sof_enable
  .text.dcd_edpt0_status_complete
-                0x10002484       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10002484                dcd_edpt0_status_complete
+                0x10002470       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10002470                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x100024a0      0x114 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100024a0                dcd_edpt_open
+                0x1000248c      0x114 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1000248c                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x100025b4        0x8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100025b4                dcd_edpt_close_all
+                0x100025a0        0x8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100025a0                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x100025bc       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100025bc                dcd_edpt_xfer
+                0x100025a8       0x24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100025a8                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x100025e0       0x3c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100025e0                dcd_edpt_stall
+                0x100025cc       0x3c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100025cc                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x1000261c       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x1000261c                dcd_edpt_clear_stall
+                0x10002608       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10002608                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x1000264c       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-                0x1000264c                rp2040_usb_init
+                0x10002638       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x10002638                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x1000268c       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-                0x1000268c                hw_endpoint_xfer_start
+                0x10002678       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x10002678                hw_endpoint_xfer_start
  .text.tud_vendor_control_xfer_cb
-                0x100026cc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026cc                tud_vendor_control_xfer_cb
+                0x100026b8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026b8                tud_vendor_control_xfer_cb
  .text.tud_event_hook_cb
-                0x100026d0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026d0                tud_event_hook_cb
+                0x100026bc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026bc                tud_event_hook_cb
  .text.tud_sof_cb
-                0x100026d4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026d4                tud_sof_cb
+                0x100026c0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026c0                tud_sof_cb
  .text.tud_descriptor_bos_cb
-                0x100026d8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026d8                tud_descriptor_bos_cb
+                0x100026c4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026c4                tud_descriptor_bos_cb
  .text.tud_descriptor_device_qualifier_cb
-                0x100026dc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026dc                tud_descriptor_device_qualifier_cb
+                0x100026c8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026c8                tud_descriptor_device_qualifier_cb
  .text.tud_descriptor_other_speed_configuration_cb
-                0x100026e0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026e0                tud_descriptor_other_speed_configuration_cb
+                0x100026cc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026cc                tud_descriptor_other_speed_configuration_cb
  .text.tud_mount_cb
-                0x100026e4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026e4                tud_mount_cb
+                0x100026d0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026d0                tud_mount_cb
  .text.tud_umount_cb
-                0x100026e8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026e8                tud_umount_cb
+                0x100026d4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026d4                tud_umount_cb
  .text.tud_suspend_cb
-                0x100026ec        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026ec                tud_suspend_cb
+                0x100026d8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026d8                tud_suspend_cb
  .text.tud_resume_cb
-                0x100026f0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026f0                tud_resume_cb
+                0x100026dc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026dc                tud_resume_cb
  .text.tud_mounted
-                0x100026f4       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100026f4                tud_mounted
+                0x100026e0       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026e0                tud_mounted
  .text.tud_suspended
-                0x10002704       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10002704                tud_suspended
+                0x100026f0       0x10 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100026f0                tud_suspended
  .text.tud_rhport_init
-                0x10002714       0xec CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10002714                tud_rhport_init
+                0x10002700       0xec CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10002700                tud_rhport_init
  .text.tud_task_ext
-                0x10002800      0x7c0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10002800                tud_task_ext
+                0x100027ec      0x7c0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100027ec                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x10002fc0       0x9c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10002fc0                usbd_open_edpt_pair
+                0x10002fac       0x9c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10002fac                usbd_open_edpt_pair
  .text.usbd_edpt_claim
-                0x1000305c       0x28 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x1000305c                usbd_edpt_claim
+                0x10003048       0x28 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10003048                usbd_edpt_claim
  .text.usbd_edpt_xfer
-                0x10003084       0x4c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10003084                usbd_edpt_xfer
+                0x10003070       0x4c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10003070                usbd_edpt_xfer
  .text.usbd_edpt_busy
-                0x100030d0       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100030d0                usbd_edpt_busy
+                0x100030bc       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100030bc                usbd_edpt_busy
  .text.tud_control_status
-                0x100030ec       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x100030ec                tud_control_status
+                0x100030d8       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x100030d8                tud_control_status
  .text.tud_control_xfer
-                0x10003118       0xa8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10003118                tud_control_xfer
+                0x10003104       0xa8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10003104                tud_control_xfer
  .text.usbd_control_reset
-                0x100031c0       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x100031c0                usbd_control_reset
+                0x100031ac       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x100031ac                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x100031d4        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x100031d4                usbd_control_set_complete_callback
+                0x100031c0        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x100031c0                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x100031e0       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x100031e0                usbd_control_set_request
+                0x100031cc       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x100031cc                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x100031fc       0xec CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x100031fc                usbd_control_xfer_cb
+                0x100031e8       0xec CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x100031e8                usbd_control_xfer_cb
  .text.tud_hid_set_protocol_cb
-                0x100032e8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100032e8                tud_hid_set_protocol_cb
+                0x100032d4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100032d4                tud_hid_set_protocol_cb
  .text.tud_hid_set_idle_cb
-                0x100032ec        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100032ec                tud_hid_set_idle_cb
+                0x100032d8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100032d8                tud_hid_set_idle_cb
  .text.tud_hid_report_complete_cb
-                0x100032f0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100032f0                tud_hid_report_complete_cb
+                0x100032dc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100032dc                tud_hid_report_complete_cb
  .text.tud_hid_report_failed_cb
-                0x100032f4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100032f4                tud_hid_report_failed_cb
+                0x100032e0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100032e0                tud_hid_report_failed_cb
  .text.tud_hid_n_ready
-                0x100032f8       0x38 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100032f8                tud_hid_n_ready
+                0x100032e4       0x38 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100032e4                tud_hid_n_ready
  .text.tud_hid_n_keyboard_report
-                0x10003330       0x84 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x10003330                tud_hid_n_keyboard_report
+                0x1000331c       0x84 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x1000331c                tud_hid_n_keyboard_report
  .text.hidd_init
-                0x100033b4       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100033b4                hidd_init
+                0x100033a0       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100033a0                hidd_init
  .text.hidd_deinit
-                0x100033c8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100033c8                hidd_deinit
+                0x100033b4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100033b4                hidd_deinit
  .text.hidd_reset
-                0x100033cc       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100033cc                hidd_reset
+                0x100033b8       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100033b8                hidd_reset
  .text.hidd_open
-                0x100033e0       0x8c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x100033e0                hidd_open
+                0x100033cc       0x8c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100033cc                hidd_open
  .text.hidd_control_xfer_cb
-                0x1000346c      0x198 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x1000346c                hidd_control_xfer_cb
+                0x10003458      0x198 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x10003458                hidd_control_xfer_cb
  .text.hidd_xfer_cb
-                0x10003604       0x7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-                0x10003604                hidd_xfer_cb
+                0x100035f0       0x7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x100035f0                hidd_xfer_cb
  .text.tusb_rhport_init
-                0x10003680       0x4c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10003680                tusb_rhport_init
+                0x1000366c       0x4c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x1000366c                tusb_rhport_init
  .text.tu_edpt_claim
-                0x100036cc       0x50 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x100036cc                tu_edpt_claim
+                0x100036b8       0x50 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x100036b8                tu_edpt_claim
  .text.tu_edpt_validate
-                0x1000371c       0x7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x1000371c                tu_edpt_validate
+                0x10003708       0x7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10003708                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x10003798       0x34 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10003798                tu_edpt_bind_driver
+                0x10003784       0x34 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10003784                tu_edpt_bind_driver
  .text.tu_fifo_read
-                0x100037cc       0x9c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100037cc                tu_fifo_read
+                0x100037b8       0x9c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100037b8                tu_fifo_read
  .text.tu_fifo_write
-                0x10003868       0xa4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10003868                tu_fifo_write
+                0x10003854       0xa4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10003854                tu_fifo_write
  .text.tu_fifo_clear
-                0x1000390c       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x1000390c                tu_fifo_clear
+                0x100038f8       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100038f8                tu_fifo_clear
  .text.board_init
-                0x1000394c       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
-                0x1000394c                board_init
- .text.atexit   0x10003960       0x10 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
-                0x10003960                atexit
+                0x10003938       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x10003938                board_init
+ .text.atexit   0x1000394c       0x10 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+                0x1000394c                atexit
  .text.__libc_fini_array
-                0x10003970       0x28 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
-                0x10003970                __libc_fini_array
+                0x1000395c       0x28 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+                0x1000395c                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x10003998        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
-                0x10003998                __retarget_lock_acquire_recursive
+                0x10003984        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
+                0x10003984                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x1000399c        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
-                0x1000399c                __retarget_lock_release_recursive
- .text.strlen   0x100039a0       0x5c /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
-                0x100039a0                strlen
+                0x10003988        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
+                0x10003988                __retarget_lock_release_recursive
+ .text.strlen   0x1000398c       0x5c /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x1000398c                strlen
  .text.__register_exitproc
-                0x100039fc       0xa8 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
-                0x100039fc                __register_exitproc
+                0x100039e8       0xa8 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+                0x100039e8                __register_exitproc
  .text.startup.register_fini
-                0x10003aa4       0x18 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x10003a90       0x18 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
  *(.fini)
- .fini          0x10003abc        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crti.o
-                0x10003abc                _fini
- .fini.__stub   0x10003ac0       0xb0 linker stubs
+ .fini          0x10003aa8        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crti.o
+                0x10003aa8                _fini
+ *fill*         0x10003aac        0x4 
+ .fini.__stub   0x10003ab0       0xb0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3793,183 +3794,183 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10003b70                        . = ALIGN (0x4)
-                0x10003b70                        PROVIDE (__preinit_array_start = .)
+                0x10003b60                        . = ALIGN (0x4)
+                0x10003b60                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x10003b70        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003b70                __pre_init_runtime_init_early_resets
+                0x10003b60        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003b60                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x10003b74        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003b74                __pre_init_runtime_init_usb_power_down
+                0x10003b64        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003b64                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x10003b78        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10003b68        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .preinit_array.00300
-                0x10003b7c        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10003b6c        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .preinit_array.00350
-                0x10003b80        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10003b70        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .preinit_array.00350
-                0x10003b84        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x10003b74        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .preinit_array.00500
-                0x10003b88        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003b88                __pre_init_runtime_init_clocks
+                0x10003b78        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003b78                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x10003b8c        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003b8c                __pre_init_runtime_init_post_clock_resets
+                0x10003b7c        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003b7c                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x10003b90        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003b90                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x10003b80        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003b80                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x10003b94        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003b94                __pre_init_runtime_init_spin_locks_reset
+                0x10003b84        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003b84                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x10003b98        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10003b98                __pre_init_runtime_init_mutex
+                0x10003b88        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10003b88                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x10003b9c        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003b9c                __pre_init_runtime_init_install_ram_vector_table
+                0x10003b8c        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003b8c                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x10003ba0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10003ba0                __pre_init_runtime_init_default_alarm_pool
+                0x10003b90        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10003b90                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x10003ba4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10003ba4                __pre_init_first_per_core_initializer
+                0x10003b94        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10003b94                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x10003ba8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10003ba8                __pre_init_runtime_init_per_core_irq_priorities
+                0x10003b98        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10003b98                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x10003bac                        PROVIDE (__preinit_array_end = .)
-                0x10003bac                        . = ALIGN (0x4)
-                0x10003bac                        PROVIDE (__init_array_start = .)
+                0x10003b9c                        PROVIDE (__preinit_array_end = .)
+                0x10003b9c                        . = ALIGN (0x4)
+                0x10003b9c                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x10003bac        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x10003b9c        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
  .init_array.01000
-                0x10003bb0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x10003ba0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  *(.init_array)
- .init_array    0x10003bb4        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
-                0x10003bb8                        PROVIDE (__init_array_end = .)
-                0x10003bb8                        . = ALIGN (0x4)
-                0x10003bb8                        PROVIDE (__fini_array_start = .)
+ .init_array    0x10003ba4        0x4 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
+                0x10003ba8                        PROVIDE (__init_array_end = .)
+                0x10003ba8                        . = ALIGN (0x4)
+                0x10003ba8                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x10003bb8                        PROVIDE (__fini_array_end = .)
+                0x10003ba8                        PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x10003bb8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
-                0x10003bb8                        . = ALIGN (0x4)
+ .eh_frame      0x10003ba8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
+                0x10003ba8                        . = ALIGN (0x4)
 
-.glue_7         0x10003bb8        0x0
- .glue_7        0x10003bb8        0x0 linker stubs
+.glue_7         0x10003ba8        0x0
+ .glue_7        0x10003ba8        0x0 linker stubs
 
-.glue_7t        0x10003bb8        0x0
- .glue_7t       0x10003bb8        0x0 linker stubs
+.glue_7t        0x10003ba8        0x0
+ .glue_7t       0x10003ba8        0x0 linker stubs
 
-.vfp11_veneer   0x10003bb8        0x0
- .vfp11_veneer  0x10003bb8        0x0 linker stubs
+.vfp11_veneer   0x10003ba8        0x0
+ .vfp11_veneer  0x10003ba8        0x0 linker stubs
 
-.v4_bx          0x10003bb8        0x0
- .v4_bx         0x10003bb8        0x0 linker stubs
+.v4_bx          0x10003ba8        0x0
+ .v4_bx         0x10003ba8        0x0 linker stubs
 
-.iplt           0x10003bb8        0x0
- .iplt          0x10003bb8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10003ba8        0x0
+ .iplt          0x10003ba8        0x0 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10003bb8      0x300
+.rodata         0x10003ba8      0x300
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.str1.4
-                0x10003bb8      0x124 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x10003ba8      0x124 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
                                  0x23 (size before relaxing)
  .rodata.__compound_literal.0
-                0x10003cdc        0x2 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
- *fill*         0x10003cde        0x2 
+                0x10003ccc        0x2 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+ *fill*         0x10003cce        0x2 
  .rodata.desc_configuration
-                0x10003ce0       0x22 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
-                0x10003ce0                desc_configuration
- *fill*         0x10003d02        0x2 
+                0x10003cd0       0x22 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x10003cd0                desc_configuration
+ *fill*         0x10003cf2        0x2 
  .rodata.desc_hid_report
-                0x10003d04       0x41 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
-                0x10003d04                desc_hid_report
- *fill*         0x10003d45        0x3 
+                0x10003cf4       0x41 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x10003cf4                desc_hid_report
+ *fill*         0x10003d35        0x3 
  .rodata.desc_device
-                0x10003d48       0x12 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
-                0x10003d48                desc_device
+                0x10003d38       0x12 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x10003d38                desc_device
  .rodata.panic.str1.4
-                0x10003d5a       0x12 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10003d4a       0x12 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.spin_lock_claim_unused.str1.4
-                0x10003d5a       0x1b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10003d4a       0x1b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x10003d5a       0x22 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10003d4a       0x22 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .rodata.hard_assertion_failure.str1.4
-                0x10003d5a        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10003d4a        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.str1.4
-                0x10003d5a       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- *fill*         0x10003d5a        0x2 
+                0x10003d4a       0x40 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ *fill*         0x10003d4a        0x2 
  .rodata.__bi_84
-                0x10003d5c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003d4c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x10003d68        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003d58        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x10003d74        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003d64        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x10003d80        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003d70        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x10003d8c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003d7c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x10003d98        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003d88        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_26
-                0x10003da4        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003d94        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.crlf_str.0
-                0x10003db0        0x2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10003da0        0x2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .rodata.str1.4
-                0x10003db2       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10003da2       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .rodata.str1.4
-                0x10003db2       0x48 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- *fill*         0x10003db2        0x2 
+                0x10003da2       0x48 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ *fill*         0x10003da2        0x2 
  .rodata.tud_task_ext
-                0x10003db4       0x8c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .rodata        0x10003e40       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10003da4       0x8c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .rodata        0x10003e30       0x1c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata._usbd_driver
-                0x10003e5c       0x20 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10003e4c       0x20 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata.hidd_control_xfer_cb
-                0x10003e7c       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x10003e6c       0x30 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
  .rodata.str1.4
-                0x10003eac        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x10003e9c        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
  .rodata.__bi_153.0
-                0x10003eac        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
-                0x10003eb8                        . = ALIGN (0x4)
+                0x10003e9c        0xc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x10003ea8                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10003eb8                        . = ALIGN (0x4)
+                0x10003ea8                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10003eb8                        __exidx_start = .
+                0x10003ea8                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10003eb8                        __exidx_end = .
-                0x10003eb8                        . = ALIGN (0x4)
-                0x10003eb8                        __binary_info_start = .
+                0x10003ea8                        __exidx_end = .
+                0x10003ea8                        . = ALIGN (0x4)
+                0x10003ea8                        __binary_info_start = .
 
-.binary_info    0x10003eb8       0x20
+.binary_info    0x10003ea8       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x10003eb8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003ea8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr78
-                0x10003ebc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003eac        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr54
-                0x10003ec0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003eb0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr48
-                0x10003ec4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003eb4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr42
-                0x10003ec8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003eb8        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr34
-                0x10003ecc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003ebc        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr26
-                0x10003ed0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003ec0        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr153
-                0x10003ed4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x10003ec4        0x4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
  *(.binary_info.*)
-                0x10003ed8                        __binary_info_end = .
-                0x10003ed8                        . = ALIGN (0x4)
+                0x10003ec8                        __binary_info_end = .
+                0x10003ec8                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3983,7 +3984,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
                 0x200000c0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0xfac load address 0x10003ed8
+.data           0x200000c0      0xfac load address 0x10003ec8
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -4092,17 +4093,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
  *(.jcr)
                 0x2000106c                        . = ALIGN (0x4)
 
-.igot.plt       0x2000106c        0x0 load address 0x10004e84
+.igot.plt       0x2000106c        0x0 load address 0x10004e74
  .igot.plt      0x2000106c        0x0 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x2000106c        0x0 load address 0x10004e84
+.tdata          0x2000106c        0x0 load address 0x10004e74
                 0x2000106c                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x2000106c                        __tdata_end = .
                 0x2000106c                        PROVIDE (__data_end__ = .)
-                0x10003ed8                        __etext = LOADADDR (.data)
+                0x10003ec8                        __etext = LOADADDR (.data)
 
-.tbss           0x2000106c        0x0 load address 0x10004e84
+.tbss           0x2000106c        0x0 load address 0x10004e74
                 0x2000106c                        . = ALIGN (0x4)
                 0x2000106c                        __bss_start__ = .
                 0x2000106c                        __tls_base = .
@@ -4110,7 +4111,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
  *(.tcommon)
                 0x2000106c                        __tls_end = .
 
-.bss            0x20001070      0xc98 load address 0x10004e84
+.bss            0x20001070      0xc98 load address 0x10004e74
                 0x20001070                        . = ALIGN (0x4)
                 0x20001070                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -4197,26 +4198,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
  *fill*         0x20001d05        0x3 
                 0x20001d08                        __bss_end__ = .
 
-.heap           0x20001d08      0x800 load address 0x10004e84
+.heap           0x20001d08      0x800 load address 0x10004e74
                 0x20001d08                        __end__ = .
                 0x20001d08                        end = __end__
  *(.heap*)
  .heap          0x20001d08      0x800 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10004e84
+.scratch_x      0x20040000        0x0 load address 0x10004e74
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10004e84                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10004e74                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10004e84
+.scratch_y      0x20041000        0x0 load address 0x10004e74
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10004e84                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10004e74                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -4228,9 +4229,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x10004e84        0x0
+.flash_end      0x10004e74        0x0
  *(.embedded_end_block*)
-                0x10004e84                        PROVIDE (__flash_binary_end = .)
+                0x10004e74                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4627,91 +4628,91 @@ LOAD linker stubs
  .debug_abbrev  0x00008350      0x200 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_loclists
-                0x00000000    0x1ada9
+                0x00000000    0x1ad95
  .debug_loclists
-                0x00000000      0xfb4 CMakeFiles/my_ducky.dir/main.c.o
+                0x00000000      0xfa0 CMakeFiles/my_ducky.dir/main.c.o
  .debug_loclists
-                0x00000fb4      0x121 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x00000fa0      0x121 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
  .debug_loclists
-                0x000010d5     0x1a7f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x000010c1     0x1a7f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_loclists
-                0x00002b54       0x53 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x00002b40       0x53 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
  .debug_loclists
-                0x00002ba7      0x349 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x00002b93      0x349 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_loclists
-                0x00002ef0      0x108 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x00002edc      0x108 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_loclists
-                0x00002ff8       0x7d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x00002fe4       0x7d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_loclists
-                0x00003075     0x11ed CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x00003061     0x11ed CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_loclists
-                0x00004262       0x41 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x0000424e       0x41 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_loclists
-                0x000042a3      0xaec CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x0000428f      0xaec CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_loclists
-                0x00004d8f       0xb6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x00004d7b       0xb6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
  .debug_loclists
-                0x00004e45     0x27af CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x00004e31     0x27af CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
  .debug_loclists
-                0x000075f4     0x19f1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x000075e0     0x19f1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_loclists
-                0x00008fe5     0x2b7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x00008fd1     0x2b7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_loclists
-                0x0000bb61      0x1e0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x0000bb4d      0x1e0 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_loclists
-                0x0000bd41       0x47 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x0000bd2d       0x47 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_loclists
-                0x0000bd88      0x351 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x0000bd74      0x351 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_loclists
-                0x0000c0d9       0x48 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000c0c5       0x48 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_loclists
-                0x0000c121       0x7e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x0000c10d       0x7e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_loclists
-                0x0000c19f      0x139 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x0000c18b      0x139 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_loclists
-                0x0000c2d8       0x74 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x0000c2c4       0x74 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_loclists
-                0x0000c34c       0x3d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x0000c338       0x3d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000c389       0x59 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x0000c375       0x59 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000c3e2     0x355f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x0000c3ce     0x355f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_loclists
-                0x0000f941      0x44e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x0000f92d      0x44e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_loclists
-                0x0000fd8f      0xf4f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x0000fd7b      0xf4f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_loclists
-                0x00010cde      0x3d5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x00010cca      0x3d5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .debug_loclists
-                0x000110b3      0xb24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x0001109f      0xb24 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
  .debug_loclists
-                0x00011bd7     0x1bd5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x00011bc3     0x1bd5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .debug_loclists
-                0x000137ac      0x719 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x00013798      0x719 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
  .debug_loclists
-                0x00013ec5     0x2197 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x00013eb1     0x2197 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .debug_loclists
-                0x0001605c      0x45e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x00016048      0x45e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
  .debug_loclists
-                0x000164ba     0x1461 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x000164a6     0x1461 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
  .debug_loclists
-                0x0001791b      0xf80 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x00017907      0xf80 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
  .debug_loclists
-                0x0001889b     0x1fdb CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x00018887     0x1fdb CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
  .debug_loclists
-                0x0001a876      0x1ca CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x0001a862      0x1ca CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
  .debug_loclists
-                0x0001aa40       0x30 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+                0x0001aa2c       0x30 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
  .debug_loclists
-                0x0001aa70       0x34 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+                0x0001aa5c       0x34 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
  .debug_loclists
-                0x0001aaa4       0x29 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
+                0x0001aa90       0x29 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
  .debug_loclists
-                0x0001aacd       0x64 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x0001aab9       0x64 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
  .debug_loclists
-                0x0001ab31      0x122 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+                0x0001ab1d      0x122 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
  .debug_loclists
-                0x0001ac53      0x156 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x0001ac3f      0x156 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_aranges  0x00000000     0x1660
  .debug_aranges
@@ -4824,165 +4825,165 @@ LOAD linker stubs
                 0x00001638       0x28 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_rnglists
-                0x00000000     0x4691
+                0x00000000     0x468b
  .debug_rnglists
-                0x00000000      0x3fc CMakeFiles/my_ducky.dir/main.c.o
+                0x00000000      0x3f6 CMakeFiles/my_ducky.dir/main.c.o
  .debug_rnglists
-                0x000003fc       0x40 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+                0x000003f6       0x40 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
  .debug_rnglists
-                0x0000043c      0x5ca CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x00000436      0x5ca CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_rnglists
-                0x00000a06       0x13 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x00000a00       0x13 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
  .debug_rnglists
-                0x00000a19       0x19 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x00000a13       0x19 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .debug_rnglists
-                0x00000a32       0xb6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x00000a2c       0xb6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_rnglists
-                0x00000ae8       0x58 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x00000ae2       0x58 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_rnglists
-                0x00000b40       0x3d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x00000b3a       0x3d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_rnglists
-                0x00000b7d      0x37d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x00000b77      0x37d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_rnglists
-                0x00000efa       0x1f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x00000ef4       0x1f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_rnglists
-                0x00000f19      0x325 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x00000f13      0x325 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_rnglists
-                0x0000123e       0x2b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x00001238       0x2b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
  .debug_rnglists
-                0x00001269      0x7dc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x00001263      0x7dc CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
  .debug_rnglists
-                0x00001a45      0x2c6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x00001a3f      0x2c6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_rnglists
-                0x00001d0b      0x5be CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x00001d05      0x5be CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_rnglists
-                0x000022c9       0x5c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x000022c3       0x5c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_rnglists
-                0x00002325       0x2b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x0000231f       0x2b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_rnglists
-                0x00002350      0x112 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x0000234a      0x112 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_rnglists
-                0x00002462       0x1f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000245c       0x1f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_rnglists
-                0x00002481       0x3d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x0000247b       0x3d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_rnglists
-                0x000024be       0x4a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x000024b8       0x4a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_rnglists
-                0x00002508       0x20 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x00002502       0x20 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_rnglists
-                0x00002528       0x43 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x00002522       0x43 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .debug_rnglists
-                0x0000256b       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x00002565       0x2c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
  .debug_rnglists
-                0x00002597       0xf9 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x00002591       0xf9 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .debug_rnglists
-                0x00002690       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x0000268a       0x14 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_rnglists
-                0x000026a4       0x99 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x0000269e       0x99 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
  .debug_rnglists
-                0x0000273d       0xe5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x00002737       0xe5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .debug_rnglists
-                0x00002822       0x13 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x0000281c       0x13 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_rnglists
-                0x00002835       0x38 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x0000282f       0x38 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
  .debug_rnglists
-                0x0000286d       0x25 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x00002867       0x25 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .debug_rnglists
-                0x00002892      0x2a2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x0000288c      0x2a2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_rnglists
-                0x00002b34       0x1b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+                0x00002b2e       0x1b CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
  .debug_rnglists
-                0x00002b4f       0x85 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x00002b49       0x85 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_rnglists
-                0x00002bd4      0x2bb CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00002bce      0x2bb CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_rnglists
-                0x00002e8f       0x70 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x00002e89       0x70 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .debug_rnglists
-                0x00002eff      0x368 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x00002ef9      0x368 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
  .debug_rnglists
-                0x00003267      0x425 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x00003261      0x425 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .debug_rnglists
-                0x0000368c       0xe8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x00003686       0xe8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
  .debug_rnglists
-                0x00003774      0x5f6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x0000376e      0x5f6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .debug_rnglists
-                0x00003d6a       0x8e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x00003d64       0x8e CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
  .debug_rnglists
-                0x00003df8      0x164 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+                0x00003df2      0x164 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
  .debug_rnglists
-                0x00003f5c      0x210 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x00003f56      0x210 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
  .debug_rnglists
-                0x0000416c      0x3d3 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x00004166      0x3d3 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
  .debug_rnglists
-                0x0000453f       0x7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+                0x00004539       0x7c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
  .debug_rnglists
-                0x000045bb       0x13 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+                0x000045b5       0x13 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
  .debug_rnglists
-                0x000045ce       0x13 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+                0x000045c8       0x13 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
  .debug_rnglists
-                0x000045e1       0x49 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
+                0x000045db       0x49 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
  .debug_rnglists
-                0x0000462a       0x13 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x00004624       0x13 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
  .debug_rnglists
-                0x0000463d       0x14 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+                0x00004637       0x14 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
  .debug_rnglists
-                0x00004651       0x40 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x0000464b       0x40 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
-.debug_line     0x00000000    0x21acb
- .debug_line    0x00000000     0x1473 CMakeFiles/my_ducky.dir/main.c.o
- .debug_line    0x00001473      0x330 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
- .debug_line    0x000017a3     0x1bf8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x0000339b      0x1fa CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
- .debug_line    0x00003595      0x200 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x00003795      0x886 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x0000401b      0x464 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x0000447f      0x34c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x000047cb     0x174d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x00005f18      0x277 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x0000618f     0x1b1a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x00007ca9      0x3a5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
- .debug_line    0x0000804e     0x34d8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x0000b526     0x1ce9 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x0000d20f     0x20d8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x0000f2e7      0x49a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000f781      0x2d6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0000fa57      0x404 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x0000fe5b      0x2f1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x0001014c      0x2b1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x000103fd      0x66a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x00010a67      0x4ef CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x00010f56      0x108 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x0001105e      0x2a9 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x00011307      0x452 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x00011759      0x40c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x00011b65      0x66d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x000121d2       0x61 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_line    0x00012233      0x3d2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x00012605      0x321 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x00012926      0x195 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x00012abb       0x94 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x00012b4f      0x193 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x00012ce2     0x1c66 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x00014948       0xa2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x000149ea      0x816 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x00015200     0x13e3 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x000165e3      0x5d7 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x00016bba      0xe13 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x000179cd     0x1e16 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_line    0x000197e3      0xc4a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_line    0x0001a42d     0x27b4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .debug_line    0x0001cbe1      0x63d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
- .debug_line    0x0001d21e      0xcad CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
- .debug_line    0x0001decb     0x118f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
- .debug_line    0x0001f05a     0x19d1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_line    0x00020a2b      0x6ab CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
- .debug_line    0x000210d6       0x4a /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x00021120       0xe7 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
- .debug_line    0x00021207       0xe7 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
- .debug_line    0x000212ee      0x17d /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
- .debug_line    0x0002146b      0x1e1 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
- .debug_line    0x0002164c      0x19a /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
- .debug_line    0x000217e6      0x2e5 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+.debug_line     0x00000000    0x21a6e
+ .debug_line    0x00000000     0x1416 CMakeFiles/my_ducky.dir/main.c.o
+ .debug_line    0x00001416      0x330 CMakeFiles/my_ducky.dir/usb_descriptors.c.o
+ .debug_line    0x00001746     0x1bf8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x0000333e      0x1fa CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+ .debug_line    0x00003538      0x200 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x00003738      0x886 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x00003fbe      0x464 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00004422      0x34c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x0000476e     0x174d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x00005ebb      0x277 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00006132     0x1b1a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x00007c4c      0x3a5 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+ .debug_line    0x00007ff1     0x34d8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x0000b4c9     0x1ce9 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x0000d1b2     0x20d8 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x0000f28a      0x49a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x0000f724      0x2d6 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x0000f9fa      0x404 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000fdfe      0x2f1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x000100ef      0x2b1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x000103a0      0x66a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x00010a0a      0x4ef CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x00010ef9      0x108 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x00011001      0x2a9 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x000112aa      0x452 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x000116fc      0x40c CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x00011b08      0x66d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x00012175       0x61 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_line    0x000121d6      0x3d2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x000125a8      0x321 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x000128c9      0x195 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x00012a5e       0x94 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x00012af2      0x193 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x00012c85     0x1c66 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x000148eb       0xa2 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x0001498d      0x816 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x000151a3     0x13e3 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x00016586      0x5d7 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x00016b5d      0xe13 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x00017970     0x1e16 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_line    0x00019786      0xc4a CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_line    0x0001a3d0     0x27b4 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_line    0x0001cb84      0x63d CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_line    0x0001d1c1      0xcad CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+ .debug_line    0x0001de6e     0x118f CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_line    0x0001effd     0x19d1 CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_line    0x000209ce      0x6ab CMakeFiles/my_ducky.dir/home/benjarch/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.o
+ .debug_line    0x00021079       0x4a /usr/lib/gcc/arm-none-eabi/14.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x000210c3       0xe7 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+ .debug_line    0x000211aa       0xe7 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+ .debug_line    0x00021291      0x17d /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-lock.o)
+ .debug_line    0x0002140e      0x1e1 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+ .debug_line    0x000215ef      0x19a /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+ .debug_line    0x00021789      0x2e5 /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_str      0x00000000     0x8b5a
  .debug_str     0x00000000     0x8b5a CMakeFiles/my_ducky.dir/main.c.o

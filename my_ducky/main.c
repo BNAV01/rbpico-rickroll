@@ -9,13 +9,13 @@
 
 const uint LED_PIN = 25;
 
-// CAMBIO 1: Usamos 0 en lugar de REPORT_ID_KEYBOARD para máxima compatibilidad
+
 void send_key(uint8_t keycode, uint8_t modifier) {
     uint8_t keycodes[6] = {keycode, 0, 0, 0, 0, 0};
-    tud_hid_keyboard_report(0, modifier, keycodes); // ID 0 es el estándar
-    board_delay(20);
+    tud_hid_keyboard_report(0, modifier, keycodes); 
+    board_delay(1);
     tud_hid_keyboard_report(0, 0, NULL);
-    board_delay(20);
+    board_delay(1);
 }
 
 int main(void) {
@@ -38,38 +38,25 @@ int main(void) {
         if (tud_mounted() && tud_hid_ready() && !atacado) {
             gpio_put(LED_PIN, 1);
             
-            // Espera de 10 segundos (Windows es lento cargando el driver 'Holtek')
-            board_delay(5000); 
+            board_delay(2500); 
 
-            // CAMBIO 2: Lógica Win+R ultra-lenta para que el SO la procese
-            // Presionar Win
             tud_hid_keyboard_report(0, KEYBOARD_MODIFIER_LEFTGUI, NULL);
-            board_delay(50);
-            // Presionar R (manteniendo Win)
+            board_delay(5);
             uint8_t r_key[6] = {HID_KEY_R, 0, 0, 0, 0, 0};
             tud_hid_keyboard_report(0, KEYBOARD_MODIFIER_LEFTGUI, r_key);
-            board_delay(50);
-            // Soltar todo
+            board_delay(5);
             tud_hid_keyboard_report(0, 0, NULL);
             
-            board_delay(1000); 
+            board_delay(100); 
 
-            // 1. Escribir la URL corta de YouTube (bit.ly/3u6fS9q o similar, 
-            // pero usaremos la directa de YouTube para asegurar el golpe)
-            // URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-
-            // h-t-t-p-s
             send_key(HID_KEY_H, 0); send_key(HID_KEY_T, 0); send_key(HID_KEY_T, 0);
             send_key(HID_KEY_P, 0); send_key(HID_KEY_S, 0);
 
-            // : (En teclado español es Shift + .)
             send_key(HID_KEY_PERIOD, KEYBOARD_MODIFIER_LEFTSHIFT);
 
-            // / / (En teclado español es Shift + 7)
             send_key(HID_KEY_7, KEYBOARD_MODIFIER_LEFTSHIFT);
             send_key(HID_KEY_7, KEYBOARD_MODIFIER_LEFTSHIFT);
 
-            // www.youtube.com/watch?v=dQw4w9WgXcQ
             send_key(HID_KEY_W, 0); 
             send_key(HID_KEY_W, 0); send_key(HID_KEY_W, 0);
             send_key(HID_KEY_PERIOD, 0);
@@ -78,21 +65,17 @@ int main(void) {
             send_key(HID_KEY_E, 0); send_key(HID_KEY_PERIOD, 0);
             send_key(HID_KEY_C, 0); send_key(HID_KEY_O, 0); send_key(HID_KEY_M, 0);
 
-            // / (Shift + 7)
             send_key(HID_KEY_7, KEYBOARD_MODIFIER_LEFTSHIFT);
 
             send_key(HID_KEY_W, 0); send_key(HID_KEY_A, 0); send_key(HID_KEY_T, 0);
             send_key(HID_KEY_C, 0); send_key(HID_KEY_H, 0);
 
-            // ? (En teclado español es Shift + tecla a la derecha del 0, suele ser HID_KEY_MINUS)
             send_key(HID_KEY_MINUS, KEYBOARD_MODIFIER_LEFTSHIFT);
 
             send_key(HID_KEY_V, 0);
 
-            // = (En teclado español es Shift + 0)
             send_key(HID_KEY_0, KEYBOARD_MODIFIER_LEFTSHIFT);
 
-            // dQw4w9WgXcQ (Ojo con las mayúsculas usando KEYBOARD_MODIFIER_LEFTSHIFT)
             send_key(HID_KEY_D, 0);
             send_key(HID_KEY_Q, KEYBOARD_MODIFIER_LEFTSHIFT);
             send_key(HID_KEY_W, 0);
@@ -105,8 +88,7 @@ int main(void) {
             send_key(HID_KEY_C, 0);
             send_key(HID_KEY_Q, KEYBOARD_MODIFIER_LEFTSHIFT);
 
-            // 2. Presionar ENTER
-            board_delay(50);
+            board_delay(25);
             send_key(HID_KEY_ENTER, 0);
 
             atacado = true;
@@ -116,7 +98,6 @@ int main(void) {
     return 0;
 }
 
-// CALLBACKS (Sin cambios, pero necesarios)
 uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t* buffer, uint16_t reqlen) {
     (void) instance; (void) report_id; (void) report_type; (void) buffer; (void) reqlen;
     return 0;

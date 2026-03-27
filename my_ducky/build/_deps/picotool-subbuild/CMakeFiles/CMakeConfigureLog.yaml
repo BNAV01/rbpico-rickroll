@@ -20,9 +20,10 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/opt/jython/bin/"
-      - "/home/benjarch/.cargo/bin/"
       - "/home/benjarch/.local/bin/"
+      - "/home/benjarch/.local/lib/hyde/"
+      - "/home/benjarch/.cargo/bin/"
+      - "/opt/jython/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -33,16 +34,25 @@ events:
       - "/usr/bin/core_perl/"
       - "/bin/"
     searched_directories:
-      - "/opt/jython/bin/uname"
-      - "/home/benjarch/.cargo/bin/uname"
       - "/home/benjarch/.local/bin/uname"
+      - "/home/benjarch/.local/lib/hyde/uname"
+      - "/home/benjarch/.cargo/bin/uname"
+      - "/opt/jython/bin/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/opt/jython/bin/"
+        - "/home/benjarch/.local/bin"
+        - "/home/benjarch/.local/bin"
+        - "/home/benjarch/.local/lib/hyde"
+        - "/home/benjarch/.local/bin"
+        - "/home/benjarch/.local/lib/hyde"
+        - "/home/benjarch/.local/bin"
+        - "/home/benjarch/.local/bin"
         - "/home/benjarch/.cargo/bin"
+        - "/opt/jython/bin/"
+        - "/opt/jython/bin/"
         - "/home/benjarch/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
@@ -58,5 +68,5 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:16 (project)"
     message: |
-      The system is: Linux - 6.18.18-1-lts - x86_64
+      The system is: Linux - 6.18.19-1-lts - x86_64
 ...
